@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/info_content"
+        android:layout_height="60dp">
+        <com.jingyue.lygame.widget.DownloadProgessView
+            android:id="@+id/ll_btn"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+        </com.jingyue.lygame.widget.DownloadProgessView>
+
+        <RelativeLayout
+            android:id="@+id/rl_down_item"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/ll_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_game_icon"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/lygame_launcher" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/iv_game_icon"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="16dp"
+                    android:maxEms="7"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:id="@+id/gamename"
+                    android:textColor="@color/color_text_normal"
+                    tools:text="王者荣耀"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/gamename"
+                    android:id="@+id/sofar"
+                    android:textColor="@color/color_sub_text"
+                    android:textSize="12dp"
+                    tools:text="75.38"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/color_sub_text"
+                    android:textSize="12dp"
+                    android:text="/"
+                    android:id="@+id/split"
+                    android:layout_toRightOf="@+id/sofar"
+                    android:layout_alignBaseline="@+id/sofar"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/color_sub_text"
+                    android:textSize="12dp"
+                    android:id="@+id/total"
+                    tools:text="99M"
+                    android:layout_alignBaseline="@+id/sofar"
+                    android:layout_toRightOf="@+id/split"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/info_content"
+        android:id="@+id/space"
+        android:layout_marginLeft="61dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/speed_info"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/speed"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="12dp"
+                tools:text="1463kb/s"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_delete"
+        android:layout_below="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_gray_aph50"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="11.5dp"
+            android:layout_marginRight="7dp"
+            android:src="@mipmap/ic_delete_icon" />
+
+        <TextView
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textSize="14dp"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+</RelativeLayout>

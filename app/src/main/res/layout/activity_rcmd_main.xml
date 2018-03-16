@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="false"
+    android:layout_height="match_parent">
+    <com.jingyue.lygame.widget.BaseScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/basescroll"
+        android:background="@color/colorWhite"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/visible_layout"
+                android:background="@color/bg_common">
+
+                <com.jingyue.lygame.widget.BaseViewPager
+                    android:id="@+id/vp_contains"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </com.jingyue.lygame.widget.BaseViewPager>
+
+                <LinearLayout
+                    android:layout_gravity="bottom|center"
+                    android:id="@+id/iv_gameicon_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </FrameLayout>
+            <TextView
+                android:layout_gravity="bottom"
+                android:paddingBottom="10dp"
+                android:textColor="@color/color_sub_text"
+                android:id="@+id/skip_tv"
+                android:gravity="center"
+                android:text="@string/a_0171"
+                android:textSize="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+        </LinearLayout>
+
+    </com.jingyue.lygame.widget.BaseScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/transparent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/transparent"
+            android:id="@+id/paddingview"
+            android:layout_height="0dp"/>
+        <include
+            layout="@layout/view_action_bar" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/retry_ll"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/retry"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_link_error"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/retry"
+            android:layout_marginTop="5dp"
+            android:layout_centerInParent="true"
+            android:text="@string/a_0232"
+            android:textColor="@color/color_sub_text"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <include layout="@layout/include_common_gametop"/>
+    <View
+        android:layout_below="@+id/game_top"
+        android:layout_width="match_parent"
+        android:background="@color/bg_common"
+        android:id="@+id/line"
+        android:layout_height="3dp"/>
+    <RelativeLayout
+       android:layout_below="@+id/line"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:id="@+id/nocomment_ll"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_marginTop="40dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/box"
+            android:src="@mipmap/ic_box"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_below="@+id/box"
+            android:layout_width="match_parent"
+            android:textSize="12sp"
+            android:padding="@dimen/normal_padding_in_view"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/a_0137"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

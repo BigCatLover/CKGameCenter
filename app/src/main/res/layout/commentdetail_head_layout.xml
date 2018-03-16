@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <include layout="@layout/include_common_gametop" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/bg_common"
+        android:id="@+id/gap_below_game"
+        android:layout_height="1dp"/>
+    <include layout="@layout/comment_adapter_layout" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_common"
+        android:layout_height="1dp"/>
+    <TextView
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:textSize="12sp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/reply_titile"
+        android:text="@string/a_0082"
+        android:textColor="@color/color_text_normal"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/bg_common"
+        android:id="@+id/line"
+        android:layout_height="1dp"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/no_reply"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/box"
+            android:src="@mipmap/ic_box"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_below="@+id/box"
+            android:layout_width="match_parent"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/a_0137"
+            android:textColor="@color/color_text_hint"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

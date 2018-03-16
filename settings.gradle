@@ -1,0 +1,1 @@
+include ':app', ':librarys:lib-common', ':librarys:lib-opensourceadapter', 'librarys:MPChartLib', 'librarys:lib-pic', ':librarys:ucrop', ':librarys:lib-ptr', ':librarys:lib-download'

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="horizontal">
+
+    <ImageView
+        style="@style/common.image.shop"
+        android:id="@+id/type1_image1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_shop_image_height"
+        android:scaleType="centerCrop" />
+
+</LinearLayout>
+

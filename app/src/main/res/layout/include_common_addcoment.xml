@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/add_comment_ll"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:id="@+id/title_addcomment"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="6dp"
+            android:id="@+id/green"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ic_left_index"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/green"
+            android:textColor="@color/color_text_normal"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:text="@string/a_0245"
+            android:layout_height="wrap_content" />
+        <ImageView
+            style="@style/common.image.button"
+            android:padding="@dimen/big_padding_in_view"
+            android:layout_width="wrap_content"
+            android:id="@+id/viewall_iv"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/arrow_bottom"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcy_addcomment"
+        android:layout_below="@+id/title_addcomment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

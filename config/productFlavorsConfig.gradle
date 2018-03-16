@@ -1,0 +1,80 @@
+android {
+
+    flavorDimensions "lyg_lv1"
+
+    productFlavors {
+        "jingyue163" {
+            dimension "lyg_lv1"
+            applicationId "com.jingyue.lygame"
+            resValue("string", "app_name", "捞月游戏中心")
+            resValue("string", "accessibility_service_name", "捞月游戏中心自动安装")
+            buildConfigField("int", "projectCode", "163")
+            buildConfigField("String", "YK_CLIENTID", '"f2188403f0bf8a9d"')
+            buildConfigField("String", "YK_SECRETKEY", '"91429fba95a7c480d5d1a4ac6df7314a"')
+            buildConfigField("String", "SHARESDK_APP_KEY", '"21fb8731d387e"')
+            buildConfigField("String", "SHARESDK_APP_SECRET", '"7698b2e655abbc60e2833ac9b0de08e3"')
+            buildConfigField("String", "WECHAT_APP_ID", '"wxb9446170e389befb"')
+            buildConfigField("String", "WECHAT_APP_SECRET", '"7d146c32941b6af3e4c1fb0916e6c478"')
+            buildConfigField("String", "USE_MESSGAE", '"1"')
+            buildConfigField("String", "USE_URL", '"1"')
+            buildConfigField("String", "URL_SCHEMA", '"http://"')
+            buildConfigField("String", "URL_PRE", '"api."')
+            buildConfigField("String", "URL", '"game.lygou.cc"')
+            buildConfigField("String", "URL_SUFFIX", '"/api/v7/"')
+            buildConfigField("String", "IP", '"114.55.53.234"')
+            buildConfigField("String", "DEFAULT_PARTNER", '"2088221879051920"')
+            buildConfigField("String", "DEFAULT_SELLER", '"wolf@laoyuegou.com"')
+            buildConfigField("String", "PRIVATE", '"MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAPgX3O+IVi2pybHoS9GSkFatFwcjhl09DaMbCawRLQfVHxlMfqfx0x/4JSsKop2f8h9E/0C2LLPMlzmNzbz+aWnk/9yUQvogTQk+jfjYSXv+hOrlKqc9HGkpg2FJdmX2CRcOXBpsCAFBO4VV0DkICa+yihFuOaxsco0R3M1fvvkpAgMBAAECgYBEnOzofi8/T77Nai5V1o/+uL4upj+J19HGszqYkOOAUAvaxlIdBn9aTxmQbs+MgmjHByEE950jWMjWDQbCZyYlrN6z1/OcN/LvRrzHbvbVgY3Xa/w/exUYTw2khTTVCO07YK6oO7VMfhipAF1O2kQuVRELs94WrQ8O3u6ygm+79QJBAPzFe9Hio9XviEAzTuDSKrG6bgUEQ77pK9YFIAuihmZlsm2N0rG1KKUbwAm2WfV1QSm1GSqT7Y4RyhznlgLE5jMCQQD7QxUdg1H16jSSjtYJoD4gxnZ3NlejXeOQrfyAYCab4U8aqxkgi+7dKeHXgH6KRGyYkzJqH+IprXFG8MLLd28zAkA6nxYzO+uhLvcbZIrTiwpJw6HGWhHYEb2P2gpviFbBIq65x51oh0oQ2Jm15uuACJx/LrfSbxI105xbDb51j/KPAkEApidELVILvvzzav89lvv6WZ4j9M1gws1xkNkdIp9yqJ4ju1TtttISUPpDOEjmZPS+g17Ddd5Dpp/lSq4ngnkmdQJACaoz18A/xGIgGe6v9fCw+rNSxi5T3FDyJ0PmlmJScX6A1gp6A0B2THvUL+PFSkjv2uy1H9Vm1f2OUT9HxzvX6w=="')
+            buildConfigField("String", "BASE_URL", '"https://s3-test-m-game.gank.tv"')
+            buildConfigField("String", "BASE_H5_URL2", '"https://api-game.gank.tv"')//二期
+            buildConfigField("String", "BASE_H5_URL", '"https://s3-test-imgx.gank.tv"')
+            buildConfigField("String", "BI_URL", '"https://latest-test-appv2.lygou.cc"')
+            buildConfigField("String", "BI_EID", '"laoyuegame"')
+            manifestPlaceholders = [HS_APPID     : "100",
+                                    APPLICATIONID: applicationId,
+                                    HS_CLIENTID  : "282",
+                                    UMENG_CHANNEL: name,
+                                    UMENG_APPKEY : "59fae7f5734be41b85000080",
+                                    HS_APPKEY    : "160e06d7a6eb33a256fb71b7807eb7f0",
+                                    HS_CLIENTKEY : "gameCenter"]
+        }
+
+        "pro" {
+            dimension "lyg_lv1"
+            applicationId "com.jingyue.lygame"
+            resValue("string", "app_name", "捞月游戏中心")
+            resValue("string", "accessibility_service_name", "捞月游戏中心自动安装")
+            buildConfigField("int", "projectCode", "163")
+            buildConfigField("String", "YK_CLIENTID", '"f2188403f0bf8a9d"')
+            buildConfigField("String", "YK_SECRETKEY", '"91429fba95a7c480d5d1a4ac6df7314a"')
+            buildConfigField("String", "SHARESDK_APP_KEY", '"21fb8731d387e"')
+            buildConfigField("String", "SHARESDK_APP_SECRET", '"7698b2e655abbc60e2833ac9b0de08e3"')
+            buildConfigField("String", "WECHAT_APP_ID", '"wxb9446170e389befb"')
+            buildConfigField("String", "WECHAT_APP_SECRET", '"7d146c32941b6af3e4c1fb0916e6c478"')
+            buildConfigField("String", "USE_MESSGAE", '"1"')
+            buildConfigField("String", "USE_URL", '"1"')
+            buildConfigField("String", "URL_SCHEMA", '"http://"')
+            buildConfigField("String", "URL_PRE", '"api."')
+            buildConfigField("String", "URL", '"game.lygou.cc"')
+            buildConfigField("String", "URL_SUFFIX", '"/api/v7/"')
+            buildConfigField("String", "IP", '"114.55.53.234"')
+            buildConfigField("String", "DEFAULT_PARTNER", '"2088221879051920"')
+            buildConfigField("String", "DEFAULT_SELLER", '"wolf@laoyuegou.com"')
+            buildConfigField("String", "PRIVATE", '"MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAPgX3O+IVi2pybHoS9GSkFatFwcjhl09DaMbCawRLQfVHxlMfqfx0x/4JSsKop2f8h9E/0C2LLPMlzmNzbz+aWnk/9yUQvogTQk+jfjYSXv+hOrlKqc9HGkpg2FJdmX2CRcOXBpsCAFBO4VV0DkICa+yihFuOaxsco0R3M1fvvkpAgMBAAECgYBEnOzofi8/T77Nai5V1o/+uL4upj+J19HGszqYkOOAUAvaxlIdBn9aTxmQbs+MgmjHByEE950jWMjWDQbCZyYlrN6z1/OcN/LvRrzHbvbVgY3Xa/w/exUYTw2khTTVCO07YK6oO7VMfhipAF1O2kQuVRELs94WrQ8O3u6ygm+79QJBAPzFe9Hio9XviEAzTuDSKrG6bgUEQ77pK9YFIAuihmZlsm2N0rG1KKUbwAm2WfV1QSm1GSqT7Y4RyhznlgLE5jMCQQD7QxUdg1H16jSSjtYJoD4gxnZ3NlejXeOQrfyAYCab4U8aqxkgi+7dKeHXgH6KRGyYkzJqH+IprXFG8MLLd28zAkA6nxYzO+uhLvcbZIrTiwpJw6HGWhHYEb2P2gpviFbBIq65x51oh0oQ2Jm15uuACJx/LrfSbxI105xbDb51j/KPAkEApidELVILvvzzav89lvv6WZ4j9M1gws1xkNkdIp9yqJ4ju1TtttISUPpDOEjmZPS+g17Ddd5Dpp/lSq4ngnkmdQJACaoz18A/xGIgGe6v9fCw+rNSxi5T3FDyJ0PmlmJScX6A1gp6A0B2THvUL+PFSkjv2uy1H9Vm1f2OUT9HxzvX6w=="')
+            buildConfigField("String", "BASE_URL", '"https://m-game.gank.tv"')
+            buildConfigField("String", "BASE_H5_URL2", '"https://api-game.gank.tv"')//二期
+            buildConfigField("String", "BASE_H5_URL", '"https://imgx.gank.tv"')
+//"https://imgx.gank.tv"') //''"http://192.168.10.10:8889"')
+            buildConfigField("String", "BI_URL", '"https://working-dev-appv2.gank.tv"')
+            buildConfigField("String", "BI_EID", '"laoyuegame"')
+            manifestPlaceholders = [HS_APPID     : "100",
+                                    APPLICATIONID: applicationId,
+                                    HS_CLIENTID  : "282",
+                                    UMENG_CHANNEL: name,
+                                    UMENG_APPKEY : "59fae7f5734be41b85000080",
+                                    HS_APPKEY    : "160e06d7a6eb33a256fb71b7807eb7f0",
+                                    HS_CLIENTKEY : "gameCenter"]
+        }
+
+    }
+}

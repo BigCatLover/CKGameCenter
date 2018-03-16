@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+                android:background="@color/colorWindowBackground"
+                android:orientation="vertical">
+
+    <include layout="@layout/view_action_bar"/>
+
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        android:id="@+id/tag_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_resistance="1.7"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_mode="none"
+        android:layout_below="@+id/actionbar_group">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tag_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+</RelativeLayout>

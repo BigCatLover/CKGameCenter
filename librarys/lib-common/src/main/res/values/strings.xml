@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LygLibrary</string>
+    <string name="cm_warn">警告</string>
+    <string name="cm_cancel">取消</string>
+    <string name="cm_sure">确定</string>
+    <string name="cm_install">立即安装</string>
+    <string name="copy_sucess">复制成功</string>
+</resources>

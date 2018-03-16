@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reply_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <RelativeLayout
+        android:id="@+id/reply_title"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="40dp"
+        android:layout_below="@+id/line">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/color_text_normal"
+                android:textSize="12sp"
+                tools:text="作者名称" />
+
+            <TextView
+                android:id="@+id/createtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:textColor="@color/color_sub_text"
+                android:textSize="11sp"
+                tools:text="2017-6-6" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/make_cool"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/like_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/color_sub_text"
+                android:textSize="11sp"
+                tools:text="123" />
+
+            <ImageView
+                android:id="@+id/make_cool_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/like_num"
+                android:src="@mipmap/ic_cool_unselect" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/reply_content"
+        android:layout_below="@+id/reply_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        style="@style/common.text.content"
+        android:maxLines="5"
+        tools:text="回复内容" />
+
+    <TextView
+        android:layout_below="@+id/reply_content"
+        android:id="@+id/viewall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|center"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        tools:text="显示全部" />
+</RelativeLayout>

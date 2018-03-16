@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_video_height">202dp</dimen>
+    <dimen name="home_video_height_half">101dp</dimen>
+    <dimen name="lyg_dialog_horizontal_margin">20dp</dimen>
+    <dimen name="lyg_dialog_vertical_margin">90dp</dimen>
+    <dimen name="rank_chart_height">200dp</dimen>
+    <dimen name="big_shop_image_height">202dp</dimen>
+    <dimen name="two_shop_image_height">101dp</dimen>
+    <dimen name="three_shop_image_height">202dp</dimen>
+</resources>

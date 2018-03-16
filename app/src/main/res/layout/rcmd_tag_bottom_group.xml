@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="@dimen/big_gap_between_view"
+        android:layout_marginLeft="@dimen/normal_gap_between_view"
+        android:text="@string/a_0264"
+        android:id="@+id/custom_tag_title"
+        style="@style/common.text.title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_divider" />
+
+
+    <com.jingyue.lygame.widget.tagflow.TagFlowLayout
+        android:layout_marginLeft="@dimen/normal_gap_between_view"
+        android:layout_marginTop="@dimen/big_gap_between_view"
+        android:id="@+id/custom_tag_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom_tag_title" />
+
+    <View
+        android:id="@+id/middle_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/custom_tag_container"
+        android:layout_marginLeft="@dimen/normal_gap_between_view"
+        android:layout_marginRight="@dimen/normal_gap_between_view"
+        android:layout_marginTop="@dimen/big_gap_between_view"
+        android:background="@color/colorWindowBackground" />
+
+
+    <TextView
+        android:layout_marginTop="@dimen/big_gap_between_view"
+        android:layout_marginLeft="@dimen/normal_gap_between_view"
+        android:text="@string/a_0265"
+        android:id="@+id/choose_tag_title"
+        style="@style/common.text.title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/middle_divider" />
+
+    <com.jingyue.lygame.widget.tagflow.TagFlowLayout
+        android:layout_marginLeft="@dimen/normal_gap_between_view"
+        android:layout_marginTop="@dimen/big_gap_between_view"
+        android:id="@+id/choose_tag_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_tag_title" />
+
+</RelativeLayout>

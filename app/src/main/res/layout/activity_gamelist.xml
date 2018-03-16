@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/view_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_size"
+        app:layout_behavior="com.jingyue.lygame.widget.DrawerNestScrollViewBehavior" />
+    <com.flyco.tablayout.SlidingTabLayout
+        android:layout_below="@+id/actionbar_group"
+        android:id="@+id/tab_gamelist"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        tl:tl_divider_color="@color/colorAccent"
+        tl:tl_divider_width="1dp"
+        tl:tl_divider_padding="10dp"
+        tl:tl_indicator_height="2dp"
+        tl:tl_indicator_margin_left="27dp"
+        tl:tl_indicator_margin_right="27dp"
+        tl:tl_indicator_color="@color/colorAccent"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="@color/colorAccent"
+        tl:tl_textUnselectColor="@color/color_sub_text"
+        tl:tl_textsize="13dp"
+        />
+    <!-- 第二块Viewpager -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_gamelist"
+        android:layout_below="@+id/tab_gamelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_common" />
+
+</RelativeLayout>

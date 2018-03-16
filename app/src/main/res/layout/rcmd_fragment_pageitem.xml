@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:id="@+id/video_ll"
+        android:layout_height="200dp">
+        <FrameLayout
+            android:id="@+id/baseview_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+        <include layout="@layout/common_include_video_control"/>
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/game_info"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/gamename"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            tools:text="王者荣耀"
+            android:maxEms="7"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/color_text_normal"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="11sp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/rcmd_type"
+            android:layout_alignBaseline="@+id/gamename"
+            android:layout_toRightOf="@+id/gamename"
+            tools:text="编辑推荐"
+            style="@style/common.button.stroke"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/like"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/ic_collect_unselect"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/game_score"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="30dp">
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:textSize="25sp"
+                tools:text="9.6"
+                android:textColor="@color/colorAccent"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/score"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/score"
+                android:layout_alignBaseline="@+id/score"
+                android:layout_width="wrap_content"
+                android:text="@string/a_0249"
+                android:textSize="15sp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <com.github.mikephil.charting.charts.RadarChart
+            android:layout_centerInParent="true"
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_gray_aph50"
+        android:layout_height="1dp">
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/comment_title"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/ic_ver"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_left_index"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/color_text_normal"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/ic_ver"
+                android:textSize="15sp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/a_0060"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/comment_title"
+            android:layout_height="70dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/comment_ll"
+                android:layout_below="@+id/comment_title"
+                android:layout_above="@+id/gray_gap"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:maxLines="2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/comment_content"
+                    android:ellipsize="end"
+                    tools:text="123456"
+                    style="@style/common.text.content"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_below="@+id/comment_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/author_info"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:id="@+id/author_type"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/author"
+                        android:textSize="12sp"
+                        android:layout_toLeftOf="@+id/author_type"
+                        android:textColor="@color/color_sub_text"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="5dp"
+                        tools:text="作者名称"
+                        android:layout_height="wrap_content" />
+                    <com.jingyue.lygame.widget.CircleImageView
+                        android:layout_width="20dp"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/author"
+                        android:src="@mipmap/userdefault"
+                        android:id="@+id/author_avater"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_toLeftOf="@+id/author_avater"
+                        android:textColor="@color/color_sub_text"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/a_0061"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/nocomment_ll"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/box"
+                    android:src="@mipmap/ic_box"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_below="@+id/box"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:layout_marginTop="7.5dp"
+                    android:gravity="center"
+                    android:text="@string/a_0137"
+                    android:textColor="@color/color_text_hint"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></View>
+
+</LinearLayout>

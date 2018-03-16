@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorWhite"
+    >
+
+    <ImageView
+        style="@style/common.image.shop"
+        android:id="@+id/type3_image1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/three_shop_image_height"
+        android:layout_weight="1"/>
+
+    <ImageView
+        style="@style/common.image.shop"
+        android:id="@+id/type3_image2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/three_shop_image_height"
+        android:layout_weight="1"/>
+
+    <ImageView
+        style="@style/common.image.shop"
+        android:id="@+id/type3_image3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/three_shop_image_height"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+

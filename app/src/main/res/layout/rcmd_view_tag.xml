@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jingyue.lygame.widget.tagflow.TagFlowLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tag_container"
+    android:paddingTop="@dimen/normal_padding_in_view"
+    android:paddingBottom="@dimen/normal_padding_in_view"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+

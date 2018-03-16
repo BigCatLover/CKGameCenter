@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+def dbflow_version = "4.0.4"//"3.0.0-beta2"
+def sqlcipher_version = "3.5.7"
+
+android {
+    compileSdkVersion cfgs.compileSdkVersion
+    buildToolsVersion cfgs.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion cfgs.minSdkVersion
+        targetSdkVersion cfgs.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    //base module
+    compile project(':librarys:lib-common')
+    compile project(':librarys:lib-ptr')
+
+    //image handler opensource
+    compile "com.github.bumptech.glide:glide:${cfgs.glide}"
+    compile 'com.umeng.analytics:analytics:6.1.2'
+}

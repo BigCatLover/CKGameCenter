@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:background="@color/colorWhite"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:textSize="10sp"
+        android:id="@+id/added_time"
+        android:layout_alignParentLeft="true"
+        tools:text="2017-06-15 追加评论"
+        android:textColor="@color/color_text_normal"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:id="@+id/added_content"
+        android:layout_below="@+id/added_time"
+        style="@style/common.text.content"
+        tools:text="123456"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/added_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        tools:text="显示全部"
+        android:id="@+id/show_all"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

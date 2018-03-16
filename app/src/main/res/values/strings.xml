@@ -1,0 +1,352 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--<string withName="app_name">Lygame</string>-->
+    <string name="a_0001">未安裝该app</string>
+
+    <!-- guide start -->
+    <string name="a_0002">我们已经找到了</string>
+    <string name="a_0003">最适合你</string>
+    <string name="a_0004">的游戏</string>
+
+    <string name="a_0005">跳过</string>
+    <string name="a_0006">上一步</string>
+    <string name="a_0007">下一步</string>
+    <string name="a_0008">完成</string>
+
+    <string name="a_0009">开始旅程</string>
+    <string name="a_0010">游戏玩法</string>
+    <string name="a_0011">游戏类型</string>
+    <string name="a_0012">游戏风格</string>
+    <string name="a_0013">你最喜欢什么样的</string>
+    <string name="a_0014">测一测最适合你的游戏</string>
+    <string name="a_0015">未知错误</string>
+    <string name="a_0016">数据解析错误</string>
+    <string name="a_0017">网络环境差</string>
+    <string name="a_0018">连接网络超时</string>
+    <string name="a_0019">连接网络失败</string>
+    <string name="a_0020">服务器返回错误</string>
+    <string name="a_0021">加载中</string>
+    <string name="a_0022">+ 为游戏传图</string>
+    <string name="a_0023">体验</string>
+    <string name="a_0024">用户鉴赏</string>
+    <string name="a_0025">编辑推荐</string>
+    <string name="a_0026">更多</string>
+    <!-- guide end -->
+
+    <!-- login start -->
+    <string name="a_0027">登录</string>
+    <string name="a_0028">忘记密码</string>
+    <string name="a_0029">密码</string>
+    <string name="a_0030">用户注册</string>
+    <string name="a_0031">请输入手机号或用户名</string>
+    <string name="a_0032">用户登录</string>
+
+    <string name="a_0033">用户中心</string>
+
+    <string name="a_0034">账户号6-12位数字或字母，区分大小写</string>
+    <string name="a_0035">密码6-16位非空字符，区分大小写</string>
+    <string name="a_0036">确认密码</string>
+    <string name="a_0037">请输入右边验证码</string>
+    <string name="a_0038">注册</string>
+    <string name="a_0039">活动</string>
+    <string name="a_0040">获取验证码</string>
+    <string name="a_0041">请输入新密码</string>
+    <string name="a_0042">注册</string>
+    <string name="a_0043">搜索</string>
+    <string name="a_0044">找不到相关结果\n换个词试试呗</string>
+    <string name="a_0045">清除历史记录</string>
+    <string name="a_0046">全民热搜</string>
+    <string name="a_0047">热门游戏标签</string>
+    <string name="a_0048">用户注册</string>
+    <string name="a_0049">礼包详情</string>
+    <string name="a_0050">领取</string>
+    <string name="a_0051">查看</string>
+    <string name="a_0052">已领完</string>
+    <string name="a_0053">使用方法：</string>
+    <string name="a_0054">请输入手机号码</string>
+    <string name="a_0055">请输入验证码</string>
+    <string name="a_0056">注册即表示同意《捞月游戏中心用户协议》</string>
+    <string name="a_0057">详细信息</string>
+    <string name="a_0058">更新内容</string>
+    <string name="a_0059">网络异常，点击重新加载</string>
+    <string name="a_0060">精彩品鉴</string>
+    <string name="a_0061">作者:</string>
+    <string name="a_0062">音画效果</string>
+    <string name="a_0063">操作体验</string>
+    <string name="a_0064">难易设定</string>
+    <string name="a_0065">运行表现</string>
+    <string name="a_0066">玩法深度</string>
+    <string name="a_0067">故事剧情</string>
+    <string name="a_0068">不同的评分分数说明什么？</string>
+    <string name="a_0069">每个评分维度是什么意思？</string>
+    <string name="a_0070">良心点评评选标准</string>
+    <string name="a_0071">评分9+\n获得评分9+的游戏必定是游戏界中创立标准并成为标杆的那一个。例如掀起Lowpoly热的《纪念碑谷》，或是可以创造一切的《我的世界。
+        \n\n评分8+\n独立团队智慧的结晶或是游戏界大成之作都会出现在这里。例如坑深但也好玩的《皇室战争》、或是如电影画面一般的《聚爆》。
+        \n\n评分7+\n如果你对某个游戏类型感兴趣，并且有了7+的评分，那就千万不要错过。就像喜爱养成的你邂逅了《阴阳师》，对operate情有独钟的你来到了《我的咖啡厅》。\n\n评分评分5-7\n达到了同类游戏的平均水平线，可能不特别出色，但一定不会让你大骂坑爹。比如喜欢像素风放置游戏的你，一定不会觉得《勇者大作战》很糟糕。
+        \n\n评分4-5\n游戏本身表现平平，有亮点也有致命缺点。6分以下因为品质有问题所以我们也不会常推荐\n\n评分4以下\n请出门左转点击网页上的“屠龙宝刀，点击就送”“极品装备，全部靠打”等。当然这类游戏你在捞月游戏上无法找到。\n
+    </string>
+    <string name="a_0072">故事剧情\n代表着游戏的剧情、叙事水准，优秀故事性的游戏能给玩家十分强烈的代入感；该类评分主要是从故事剧本的编写、玩法与剧情的契合度、代入感等方面对故事剧情进行评分\n\n
+        音画效果\n代表游戏画面和音乐效果的水准，结合画面与音乐给出整体视听效果的综合评分，画面与相同画风风格游戏进行纵向对比，从创意设计、多样化等多重因素考量评分。音乐会从多样性、主题契合度、氛围营造等多重因素评分。\n\n
+        操作体验\n操作评分不局限于打击感等动作游戏的操作感受，还包含了人机交互的体验。高评分代表游戏操作易用性高，操作反馈良好，长时间操作也不会感觉不适，或是代表游戏操作技巧较深，在操作上有很大的玩家空间可以探索。\n\n
+        难易设定\n代表着游戏整体的难以设定程度，即使是神庙逃亡也有着难易程度不同的关卡设计，所以这个评分不只代表“有很多很难的关卡”。这项评分代表着游戏关卡设计水准，会从关卡设计、关卡创意度、关卡难易程度等角度衡量评分。\n\n
+        运行表现\n代表游戏运行过程中人机交互的体验感，高评分代表游戏整体运行十分流畅，无掉帧、卡顿效果，操作反馈十分良好，说是行云流水也不为过，该类评分主要是从游戏在手机运行过程中的流畅度、机器发热程度等方面对运行表现进行评分。\n\n
+        玩法深度\n玩法深度不局限于关卡难易度、剧情代入感等操作感受，还包含了游戏内的职业、技能、道具等数值相关内容是否平衡，平衡性会考量玩家非付费渠道获得成长的途径是否丰富，花费时间获得的资源与付费获得资源的价值是否匹配，从而考量整体游戏的可玩性是否够强。\n
+    </string>
+    <string name="a_0073">警告</string>
+    <string name="a_0074">代表游戏画面和音乐与游戏内容剧情关联系性较强的评论，给其他玩家进行游戏起到了帮助的评论，对游戏的喜爱或是吐槽，说出心声的评论，获得较多其他玩的赞同、评论数较多的。</string>
+    <string name="a_0075">取消</string>
+    <string name="a_0076">确定</string>
+    <string name="a_0077">用户评价</string>
+    <string name="a_0078">回复</string>
+    <string name="a_0079">游戏谷</string>
+    <string name="a_0080">专题活动</string>
+    <string name="a_0081">评分:</string>
+    <string name="a_0082">全部回复</string>
+    <string name="a_0083">显示全部</string>
+    <string name="a_0084">设置</string>
+    <string name="a_0085">月牙值</string>
+    <string name="a_0086">功能</string>
+    <string name="a_0087">检查更新</string>
+    <string name="a_0088">当前版本：</string>
+    <string name="a_0089">切换账号</string>
+    <string name="a_0090">退出登录</string>
+    <string name="a_0091">用户评价</string>
+    <string name="a_0092">相关游戏</string>
+    <string name="a_0093">我的月牙：</string>
+    <string name="a_0094">月牙账单</string>
+    <string name="a_0095">月牙值说明</string>
+    <string name="a_0096">月牙城</string>
+    <string name="a_0097">关注</string>
+    <string name="a_0098">取消关注</string>
+    <string name="a_0099">从相册选择</string>
+    <string name="a_0100">拍照</string>
+    <string name="a_0101">(%1$d)</string>
+    <string name="a_0102">选择相册</string>
+    <string name="a_0103">选择照片</string>
+    <string name="a_0104">确定(%1$d)</string>
+    <string name="a_0105">预览</string>
+    <string name="a_0106">您还没选择照片</string>
+    <string name="a_0107">选择</string>
+    <string name="a_0108">网络连接不可用，请检查网络</string>
+    <string name="a_0109">操作</string>
+    <string name="a_0110">选择默认头像</string>
+    <string name="a_0111">个人中心</string>
+    <string name="a_0112">发表</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="a_0113">Hello blank fragment</string>
+    <string name="a_0114">图片保存中 …</string>
+    <string name="a_0115">请等待…</string>
+    <string name="a_0116">确认</string>
+    <string name="a_0117">您最多只能选%1$d张图片</string>
+    <!-- login end-->
+
+    <!-- update start -->
+    <string name="a_0118">版本更新内容：</string>
+    <string name="a_0119">下载失败</string>
+    <string name="a_0120">开始下载</string>
+    <string name="a_0121">稍候再下载</string>
+    <string name="a_0122">该APK包验证错误，请重新下载或联系客服</string>
+
+    <string name="a_0123">零流量极速安装</string>
+    <string name="a_0124">存储空间不足，下载失败</string>
+    <string name="a_0125">开始下载...</string>
+    <string name="a_0126">情谊更新一波</string>
+    <string name="a_0127">正在下载</string>
+    <string name="a_0128">下载完成</string>
+    <string name="a_0129">版本更新内容：</string>
+
+    <!-- update end -->
+
+    <!-- rcmd start-->
+    <string name="a_0130">评分:</string>
+    <string name="a_0131">竞技</string>
+    <string name="a_0132">暂无回复</string>
+    <!-- rcmd end-->
+
+    <string name="a_0133">是</string>
+    <string name="a_0134">否</string>
+    <string name="a_0135">展开</string>
+    <string name="a_0136">收起</string>
+    <string name="a_0137">暂无内容，快点评一个~~</string>
+    <string name="a_0138">大家都在搜：<xliff:g id="name">%1$s</xliff:g></string>
+    <string name="a_0139">"00:00"</string>
+    <string name="a_0140">游戏清单</string>
+    <string name="a_0141">客服</string>
+    <string name="a_0142">密保邮箱</string>
+    <string name="a_0143">密保手机</string>
+    <string name="a_0144">修改密码</string>
+    <string name="a_0145">客服中心</string>
+    <string name="a_0146">头像修改成功</string>
+    <string name="a_0147">设置中心</string>
+    <string name="a_0148">我的收藏</string>
+    <string name="a_0149">我的预约</string>
+    <string name="a_0150">选择照片</string>
+    <string name="a_0151">选择相册</string>
+    <string name="a_0152">个性评价</string>
+    <string name="a_0153">用户体验</string>
+    <string name="a_0154">万</string>
+    <string name="a_0155">未知</string>
+    <string name="a_0156">回复内容不可以为空！</string>
+    <string name="a_0157">欢迎追加新的体验评论，不少于20个字。</string>
+    <string name="a_0158">我们期待你的忠实客观的体验感受和评价建议哦，不少于20字。</string>
+    <string name="a_0159">扭头就走</string>
+    <string name="a_0160">平均以下</string>
+    <string name="a_0161">值得一试</string>
+    <string name="a_0162">同类标准</string>
+    <string name="a_0163">业界顶尖</string>
+    <string name="a_0164">时代精品</string>
+    <string name="a_0165">创世神作</string>
+    <string name="a_0166">评论字数不符合要求</string>
+    <string name="a_0167">评分说明</string>
+    <string name="a_0168">提交成功</string>
+    <string name="a_0169">iphone XXX</string>
+    <string name="a_0170">释放跳转详情页</string>
+    <string name="a_0171">上拉跳转详情页</string>
+    <string name="a_0172">返回</string>
+    <string name="a_0173">保存</string>
+    <string name="a_0174">图片加载失败，请重试</string>
+    <string name="a_0175">图片保存路径:</string>
+    <string name="a_0176">保存图片失败! </string>
+    <string name="a_0177">推荐</string>
+    <string name="a_0178">发现</string>
+    <string name="a_0179">游戏谷</string>
+    <string name="a_0180">连续按2次退出，退出应用。</string>
+    <string name="a_0181">我们需要获取设备信息，为您进行设备识别；否则您将无法正常使用捞月游戏中心</string>
+    <string name="a_0182">请允许获取设备信息</string>
+    <string name="a_0183">我们需要获取存储空间，为您存储个人信息，否则您将无法正行使用捞月游戏中心</string>
+    <string name="a_0184">请允许获取存储空间</string>
+    <string name="a_0185">账号注册</string>
+    <string name="a_0186">账号只能由6至16位英文或数字组成，需字母开头</string>
+    <string name="a_0187">请先获取验证码！</string>
+    <string name="a_0188">请输入正确的验证码</string>
+    <string name="a_0189">密码只能为6到16位数字或者字母组合</string>
+    <string name="a_0190">两次输入密码必须一致</string>
+    <string name="a_0191">注册即表示同意</string>
+    <string name="a_0192">捞月游戏平台用户协议</string>
+    <string name="a_0193">启动</string>
+    <string name="a_0194">预约</string>
+    <string name="a_0195">已预约</string>
+    <string name="a_0196">重试</string>
+    <string name="a_0197">安装</string>
+    <string name="a_0198">等待</string>
+    <string name="a_0199">取消预约</string>
+    <string name="a_0200">预约成功</string>
+    <string name="a_0201">取消收藏成功</string>
+    <string name="a_0202">收藏成功</string>
+    <string name="a_0203">取消预约成功</string>
+    <string name="a_0204">取消收藏</string>
+    <string name="a_0205">继续</string>
+    <string name="a_0206">断开</string>
+    <string name="a_0207">WIFI已断开,是否继续观看?</string>
+    <string name="a_0208">正在使用非wifi网络，播放将产生流量费用</string>
+    <string name="a_0209">正在使用非wifi网络，下载将产生流量费用</string>
+    <string name="a_0210">网络连接出错~</string>
+    <string name="a_0211">换一批</string>
+    <string name="a_0212">评分分数不可以为0</string>
+    <string name="a_0213">保存草稿，稍后再写</string>
+    <string name="a_0214">追加评价</string>
+    <string name="a_0215">首次评论</string>
+    <string name="a_0216">游戏不存在</string>
+    <string name="a_0217">标签不存在</string>
+    <string name="a_0218">上传图片成功</string>
+    <string name="a_0219">上传图片失败</string>
+    <string name="a_0220">复制链接</string>
+    <string name="a_0221">复制成功</string>
+    <string name="a_0222">捞月游戏平台用户协议</string>
+    <string name="a_0223">手机注册</string>
+    <string name="a_0224">用户名注册</string>
+    <string name="a_0225">视频不存在！</string>
+    <string name="a_0226">标签最大长度不能超过4</string>
+    <string name="a_0227">回复成功</string>
+    <string name="a_0228">请先登录</string>
+    <string name="a_0229">微信朋友圈</string>
+    <string name="a_0230">微信好友</string>
+    <string name="a_0231">是否安装微信客户端或者更新微信到最新版本</string>
+    <string name="a_0232">网络连接错误，请点击重试</string>
+    <string name="a_0233">当前已经是最新版本！</string>
+    <string name="a_0234">准备超时</string>
+    <string name="a_0235">播放器准备失败</string>
+    <string name="a_0236">videoId为空</string>
+    <string name="a_0237">网络出错</string>
+    <string name="a_0238">请求超时</string>
+    <string name="a_0239">视频地址无法解析</string>
+    <string name="a_0240">未知错误</string>
+    <string name="a_0241">网络链接已经断开</string>
+    <string name="a_0242">搜索热词</string>
+    <string name="a_0243">观点评价：</string>
+    <string name="a_0244">请输入内容</string>
+    <string name="a_0245">追加评论</string>
+    <string name="a_0246">《 捞月游戏平台服务使用协议 》</string>
+    <string name="a_0247">删除</string>
+    <string name="a_0248">一起创建游戏天地！</string>
+    <string name="a_0249">分</string>
+    <string name="a_0250">游戏自荐</string>
+    <string name="a_0251">游戏厂商：</string>
+    <string name="a_0252">最低适应版本：</string>
+    <string name="a_0253">游戏语言：</string>
+    <string name="a_0254">包体大小：</string>
+    <string name="a_0255">版本信息：</string>
+    <string name="a_0256">体验量：</string>
+    <string name="a_0257">点击重试</string>
+    <string name="a_0258">立即安装</string>
+    <string name="a_0259">更新</string>
+    <string name="a_0260">我的常用标签</string>
+    <string name="a_0261">点击下方可以添加自定义标签哦！</string>
+    <string name="a_0262">该游戏的热门标签</string>
+    <string name="a_0263">为游戏添加合适的标签</string>
+    <string name="a_0264">我设计的个性标签</string>
+    <string name="a_0265">我选择的游戏标签</string>
+    <string name="a_0266">复制成功，请尽快使用</string>
+    <string name="a_0267">未安装手Q或安装的版本不支持</string>
+    <string name="a_0268">视频地址无法解析</string>
+    <string name="a_0269">未知错误</string>
+    <string name="a_0270">网络链接已经断开</string>
+    <string name="a_0271">视频地址无法解析</string>
+    <string name="a_0272">已在Wi-Fi下为您准备好新版本的安装包</string>
+    <string name="a_0273">抱歉,播放器遇到了未知错误</string>
+    <string name="a_0274">超时</string>
+    <string name="a_0275">请先连接网络~</string>
+    <string name="a_0276">WIFI已断开,是否继续观看?</string>
+    <string name="a_0277">继续</string>
+    <string name="a_0278">断开</string>
+    <string name="a_0279">评论不能少于</string>
+    <string name="a_0280">个字符</string>
+    <string name="a_0281">评分：</string>
+    <string name="a_0282">非法类型</string>
+    <string name="a_0283">请输入用户名</string>
+    <string name="a_0284">忘记密码</string>
+    <string name="a_0285">登录成功！</string>
+    <string name="a_0286">恭喜您增加了</string>
+    <string name="a_0287">个月牙</string>
+    <string name="a_0288">用户体验</string>
+    <string name="a_0289">网络不通，请稍后再试！</string>
+    <string name="a_0290">无效的请求地址</string>
+    <string name="a_0291">积分</string>
+    <string name="a_0292">排队</string>
+
+    <string name="a_0293">文件太大，不适于通过运营商网络下载</string>
+
+    <string name="a_0294">立即开始</string>
+
+    <string name="a_0295">稍后再加入下载队列吗？</string>
+
+    <string name="a_0296">立即开始下载此内容 (<xliff:g id="SIZE">%s </xliff:g>) 可能会缩短电池的使用时间并/或导致过量使用移动数据连接流量（这可能导致移动运营商向您收费，具体取决于您的流量套餐）。\n\n触摸<xliff:g id="QUEUE_TEXT">%s</xliff:g>”可在下次连接到WLAN网络时开始下载此内容。"</string>
+
+    <string name="a_0297" msgid="3067694630143784449">"您必须使用WLAN完成此内容 (<xliff:g id="SIZE">%s </xliff:g>) 的下载。\n\n触摸“<xliff:g id="QUEUE_TEXT">%s </xliff:g>”可在下次连接到WLAN网络时开始下载此内容。"</string>
+    <string name="a_0298"><xliff:g id="name">%1$s</xliff:g> <xliff:g id="num">%2$d</xliff:g></string>
+    <string name="a_0299"><xliff:g id="name">%1$d</xliff:g>. </string>
+    <string name="a_0300"><xliff:g id="name">%1$s</xliff:g> <xliff:g id="num">%2$s</xliff:g></string>
+    <string name="a_0301"><xliff:g id="name">%1$s</xliff:g>用户体验</string>
+    <string name="a_0302"><xliff:g id="name">%1$d</xliff:g>用户体验</string>
+    <string name="a_0303">前未连接wifi，确定使用手机网络下载？</string>
+    <string name="a_0304">捞月游戏中心 正在下载中...<xliff:g id="per">%1$d</xliff:g></string>
+    <string name="a_0305">下载速度<xliff:g id="name">%1$s</xliff:g>    剩余时间 <xliff:g id="time">%2$s</xliff:g></string>
+    <string name="a_0306">秒</string>
+    <string name="a_0307">分</string>
+    <string name="a_0308">小时</string>
+    <string name="a_0309">下载中心</string>
+    <string name="a_0310">清除</string>
+    <string name="a_0311">kb/s</string>
+    <string name="a_0312">M/S</string>
+
+</resources>

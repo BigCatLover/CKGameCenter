@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- text ref-->
+    <dimen name="extra_small_text_size">7.5sp</dimen>
+    <dimen name="small_text_size">10sp</dimen>
+    <dimen name="normal_text_size">12sp</dimen>
+    <dimen name="big_text_size">15sp</dimen>
+    <dimen name="super_big_text_size">25sp</dimen>
+
+    <!-- button ref-->
+    <dimen name="normal_button_height">38dp</dimen>
+
+    <!-- layout ref-->
+    <dimen name="normal_layout_bound">30dp</dimen>
+    <dimen name="small_layout_bound">20dp</dimen>
+
+    <dimen name="small_padding_in_view">2dp</dimen>
+    <dimen name="bigger_than_small_padding">4dp</dimen>
+    <dimen name="normal_padding_in_view">7.5dp</dimen>
+    <dimen name="big_padding_in_view">10dp</dimen>
+
+    <dimen name="normal_gap_between_view">10dp</dimen>
+    <dimen name="small_gap_between_view">5dp</dimen>
+    <dimen name="big_gap_between_view">15dp</dimen>
+    <dimen name="normal_card_elevation">0dp</dimen>
+    <dimen name="actionbar_size">50dp</dimen>><!--?android:actionBarSize</dimen>-->
+
+    <!-- animtion set-->
+    <dimen name="spacing_medium">4dp</dimen>
+    <dimen name="normal_progressbar_size">64dp</dimen>
+
+    <!-- normal widget ref-->
+    <dimen name="line_width">1dp</dimen>
+    <dimen name="normal_radius">5dp</dimen>
+    <dimen name="small_radius">2.5dp</dimen>
+</resources>

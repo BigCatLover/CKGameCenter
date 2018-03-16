@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:id="@+id/download_ll"
+    android:layout_height="33dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:id="@+id/download_click"
+        android:layout_height="33dp">
+        <com.jingyue.lygame.widget.RoundProgressBar
+            android:id="@+id/pb_download"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:pb_radius="15dp"
+            app:progress_reached_color="@color/colorAccent"
+            app:progress_unreached_color="@color/colorAccent"
+            app:progress_reached_bar_height="4dp"
+            app:progress_unreached_bar_height="1dp"
+            android:progress="0"
+            android:max="100"/>
+        <ImageView
+            android:id="@+id/iv_center"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_down_stop"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:id="@+id/gray_btn"
+        android:visibility="invisible"
+        tools:text="已预约"
+        android:gravity="center"
+        style="@style/common.button.unselected"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/green_btn"
+        style="@style/common.button.normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/a_0023"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"/>
+
+
+</FrameLayout>

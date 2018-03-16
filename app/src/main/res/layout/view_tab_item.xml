@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/actionbar_size"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+   <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@mipmap/arrow_bottom"
+        android:scaleType="centerInside"
+        android:focusable="false"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textview"
+        android:layout_below="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        tools:text="首页"
+        android:textSize="12sp"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_chat_red_dot"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/bg_red_circle"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/chat_right_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_red_dot"
+        android:gravity="center"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        tools:text="11222222222222"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/small_text_size"
+        android:visibility="gone" />
+</RelativeLayout>

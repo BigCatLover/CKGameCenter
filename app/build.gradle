@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+apply from: "../config/buildConfig.gradle"
+apply from: "../config/productFlavorsConfig.gradle"
+
+def dbflow_version = "4.0.4"//"3.0.0-beta2"
+def sqlcipher_version = "3.5.7"
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+android {
+    compileSdkVersion cfgs.compileSdkVersion
+    buildToolsVersion cfgs.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion cfgs.minSdkVersion
+        targetSdkVersion cfgs.targetSdkVersion
+        applicationId cfgs.applicationId
+        versionCode cfgs.versionCode
+        versionName cfgs.versionName
+        multiDexEnabled true
+    }
+    //这个是解决lint报错的代码
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(include: ['*.jar'], dir: 'libs_share')
+    compile(name: 'YoukuPlayerOpenSDK-release', ext: 'aar')
+    compile project(':librarys:MPChartLib')
+    compile project(':librarys:lib-common')
+    compile project(':librarys:lib-pic')
+    compile project(':librarys:lib-download')
+    //compile project(':librarys:lib-imSdk')
+    compile project(':librarys:lib-opensourceadapter')
+    //dbflow
+    annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
+    compile "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
+    compile "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
+
+    //ui
+    //tab indicator
+    compile "com.flyco.tablayout:FlycoTabLayout_Lib:$cfgs.flycoTabLayout_Lib"
+    //图片放大组件
+    compile "com.github.chrisbanes.photoview:library:${cfgs.photoview}"
+
+    //优酷视频依赖库
+    compile files('libs/mma_sdk.jar')
+    compile files('libs/utdid4all-1.1.5.5.jar')
+    compile 'com.alibaba:fastjson:1.1.56.android'
+
+    //取色工具
+    //compile "com.android.support:palette-v7:${cfgs.androidSupportVersion}"
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    //微信sdk
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:1.3.4'
+    //内存检测
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+}

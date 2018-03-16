@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#19ac93</color>
+    <color name="colorPrimaryDark">#19ac93</color>
+    <color name="colorAccent">#19c8a9</color>
+    <color name="colorPoorAccent">#7719ac93</color>
+    <color name="colorWindowBackground">#f2f2f2</color>
+
+    <color name="colorSuperLinkText">#0090ff</color>>
+    <color name="colorTitleTextNormal">#ffffff</color>
+    <color name="colorTitleTextSelect">#fe9b50</color>
+
+    <!-- 低透明浮层颜色 -->
+    <color name="colorBlockMaskBg">#dd333333</color>
+    <!-- 高透明浮层颜色 -->
+    <color name="colorMaskBg">#33333333</color>
+
+    <color name="colorIndicatorTextNormal">#7e7e7f</color>
+    <color name="colorIndicatorTextSelect">#3a3a3a</color>
+    <color name="lyg_color_gray_6_new">#E3E3E3</color>
+
+    <color name="color_text_select">#19ac93</color>
+    <color name="color_text_normal">#4a4a4a</color>
+    <color name="color_sub_text">#7f7f7f</color>
+    <color name="color_text_content">#90949a</color>
+    <color name="color_text_hint">#b3b9c2</color>
+    <color name="color_text_tip">#4c4c4c</color>
+    <color name="black_text">#4f4f4f</color>
+
+    <color name="progress_second">#a6a6a6</color>
+    <color name="chart_blue">#7ecdff</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorPoorWhite">#77ffffff</color>
+    <color name="colorWhiteFocus">#77f3f3f3</color>
+    <color name="color_gray_aph50">#50cccccc</color>
+    <color name="colorTranslucent">#00000000</color>
+    <color name="colorPoorTranslucent">#33000000</color>
+    <color name="color_text_black">#333333</color>
+    <color name="bg_common">#E7EAEF</color>
+    <color name="color_text_gray_2">#565656</color>
+    <color name="bqm_transparent">#00000000</color>
+    <color name="bg_gray">#f9f9f9</color>
+    <color name="search_white_bg">#f2f2f2</color>
+    <color name="color_tag_bg">#f3f3f3</color>
+    <color name="half_trans_bg">#55000000</color>
+    <color name="crop_selector_pressed">#1a000000</color>
+    <color name="crop_selector_focused">#77000000</color>
+    <color name="color_red_dot">#FF6767</color>
+</resources>

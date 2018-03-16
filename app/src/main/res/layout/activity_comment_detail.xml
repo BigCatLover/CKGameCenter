@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWindowBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/view_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_size"
+        app:layout_behavior="com.jingyue.lygame.widget.DrawerNestScrollViewBehavior"/>
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptrRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_mode="both"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            />
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    <View
+        android:id="@+id/gap"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_common"/>
+
+    <RelativeLayout
+        android:id="@+id/reply_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/normal_padding_in_view"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/reply_btn"
+            android:background="@drawable/common_accent_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="4dp"
+            android:paddingRight="7dp"
+            android:paddingLeft="7dp"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:text="@string/a_0078"
+            android:textColor="@color/colorWhite"
+            android:textSize="14dp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/reply_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/reply_btn"
+            style="@style/common.text.edit"
+            android:gravity="left|center_vertical"
+            android:textSize="14dp"
+            android:padding="@dimen/normal_padding_in_view"
+            android:textColor="@color/color_text_normal"
+            tools:text="@string/a_0023"/>
+    </RelativeLayout>
+
+</LinearLayout>

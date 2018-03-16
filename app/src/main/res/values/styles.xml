@@ -1,0 +1,201 @@
+<resources>
+
+    <style name="common" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="common">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <!--<item name="android:windowNoTitle">true</item>-->
+    </style>
+
+    <style name="welcomeTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@mipmap/app_splash</item>
+    </style>
+
+    <style name="transparent" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/push_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/push_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_right_out</item>
+        <item name="android:fragmentOpenEnterAnimation">@anim/push_right_in</item>
+        <item name="android:fragmentOpenExitAnimation">@anim/push_left_out</item>
+        <item name="android:fragmentCloseEnterAnimation">@anim/push_left_in</item>
+        <item name="android:fragmentCloseExitAnimation">@anim/push_right_out</item>
+    </style>
+
+    <style name="lyg_divider_line_2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2px</item>
+        <item name="android:background">@color/lyg_color_gray_6_new</item>
+    </style>
+
+    <style name="lyg_vertical_line_1">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/lyg_color_gray_6_new</item>
+    </style>
+
+    <!-- ============== -->
+    <!-- button组件通用样式-->
+    <!-- ============== -->
+    <style name="common.button">
+        <item name="android:background">@drawable/common_bg</item>
+    </style>
+
+    <!-- 默认按钮Button样式 -->
+    <style name="common.button.normal">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:paddingBottom">@dimen/small_padding_in_view</item>
+        <item name="android:paddingTop">@dimen/small_padding_in_view</item>
+        <item name="android:paddingRight">@dimen/big_gap_between_view</item>
+        <item name="android:paddingLeft">@dimen/big_gap_between_view</item>
+        <item name="android:background">@drawable/common_accent_bg</item>
+    </style>
+
+    <!-- 默认按钮Button样式 -->
+    <style name="common.button.normal.smallpadding">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:paddingBottom">@dimen/small_padding_in_view</item>
+        <item name="android:paddingTop">@dimen/small_padding_in_view</item>
+        <item name="android:paddingRight">@dimen/normal_padding_in_view</item>
+        <item name="android:paddingLeft">@dimen/normal_padding_in_view</item>
+        <item name="android:background">@drawable/common_accent_bg</item>
+    </style>
+
+    <!-- 默认灰色按钮Button样式 -->
+    <style name="common.button.unselected">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:padding">@dimen/normal_padding_in_view</item>
+        <item name="android:background">@drawable/common_strokef1f1f1_corner7_bg_default</item>
+    </style>
+
+    <!--  带primary color边线的button样式  -->
+    <style name="common.button.stroke">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@drawable/common_stroke_accent_bg_default</item>
+    </style>
+
+    <!-- ============== -->
+    <!-- 文字组件TextView通用样式 -->
+    <!-- ============== -->
+    <style name="common.text">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/color_text_hint</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- 输入框-->
+    <style name="common.text.edit">
+        <item name="android:background">@drawable/login_input_bg_default</item>
+    </style>
+
+    <!-- 黑色文字  -->
+    <style name="common.text.normal">
+        <item name="android:textColor">@color/color_text_normal</item>
+    </style>
+
+    <!-- 超大文字  -->
+    <style name="common.text.big">
+        <item name="android:textSize">@dimen/super_big_text_size</item>
+    </style>
+
+    <!-- 副标题文字样式 -->
+    <style name="common.text.title">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/big_text_size</item>
+    </style>
+
+    <!-- 次级页面索引 -->
+    <style name="common.text.index">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:background">@drawable/common_bg</item>
+        <item name="android:padding">@dimen/normal_padding_in_view</item>
+    </style>
+
+    <!-- 副标题文字样式 -->
+    <style name="common.text.subtitle">
+        <item name="android:textColor">@color/color_sub_text</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <!-- 内容文字样式 -->
+    <style name="common.text.content">
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:textColor">@color/color_text_content</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <style name="common.dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="common.dialogwithani" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/dialog_style</item>
+    </style>
+
+    <style name="dialog_style">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+
+    <!-- ============== -->
+    <!-- 图片组件通用样式 -->
+    <!-- ============== -->
+    <style name="common.image"></style>
+
+    <!-- 图片按钮样式 -->
+    <style name="common.image.button">
+        <item name="android:background">@drawable/common_bg</item>
+    </style>
+
+    <style name="common.image.shop">
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <!-- 定义对话框下往上弹出效果的文件 -->
+    <style name="dialog_bottom_up_style">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_bottom_to_up</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_top_to_bottom</item>
+    </style>
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"/>
+        <attr name="max_select" format="integer"/>
+        <attr name="single_line" format="boolean"/>
+        <attr name="stay_last_item" format="boolean"/>
+        <attr name="gravity">
+            <enum name="left" value="-1"/>
+            <enum name="center" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+    <string name="gravity_center">center</string>
+    <string name="gravity_left">left</string>
+    <string name="gravity_right">right</string>
+</resources>

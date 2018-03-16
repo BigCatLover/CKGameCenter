@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="55dp"
+    android:paddingRight="55dp"
+    android:paddingBottom="150dp"
+    android:paddingTop="40dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/text"
+            android:text="@string/a_0013"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="18dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toRightOf="@+id/text"
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="24dp"
+            android:text="@string/a_0012"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toRightOf="@+id/text1"
+            android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="\?"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/game"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/a_0011"
+            android:textSize="13dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/a_0010"
+            android:textSize="13dp"
+            android:layout_height="wrap_content" />
+        
+    </LinearLayout>
+
+    <com.jingyue.lygame.widget.guide.ImageClipView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    </com.jingyue.lygame.widget.guide.ImageClipView>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--
+files-path代表的根目录： Context.getFilesDir()
+external-path代表的根目录: Environment.getExternalStorageDirectory()
+cache-path代表的根目录: getCacheDir()
+    -->
+    <external-path
+        name="files_root"
+        path="Android/data/com.jingyue.lygame/apk/"/>
+    <external-path
+        name="external_storage_root"
+        path="."/>
+</paths>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 游戏详情页 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slide_up_container"
+    android:background="@color/colorBlockMaskBg"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/add_pic"
+        style="@style/common.button.normal"
+        android:textSize="11sp"
+        android:padding="@dimen/normal_padding_in_view"
+        android:layout_marginLeft="@dimen/normal_gap_between_view"
+        android:layout_centerVertical="true"
+        android:text="@string/a_0022"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/normal_gap_between_view"
+        android:layout_toRightOf="@+id/add_pic"
+        android:layout_centerVertical="true"
+        android:text="@string/a_0248"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginRight="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_slide_up"
+        android:id="@+id/open_drawer_handler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="@dimen/normal_padding_in_view"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_centerVertical="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/normal_gap_between_view"
+        android:layout_marginRight="@dimen/normal_gap_between_view"
+        tools:src="@mipmap/ic_launcher"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/game_nametype"
+        android:layout_toRightOf="@+id/image"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tag_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="王者榮耀"
+            android:textSize="@dimen/big_text_size"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+        <ImageView
+            android:layout_marginTop="@dimen/normal_gap_between_view"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="7.5dp"
+            android:id="@+id/active"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tag_title"
+            android:src="@mipmap/ic_active"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginTop="@dimen/normal_gap_between_view"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="7.5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/transport"
+            android:layout_toRightOf="@+id/active"
+            android:src="@mipmap/ic_moon_rect"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rank_value"
+        android:layout_below="@+id/game_nametype"
+        android:layout_toRightOf="@+id/image"
+        android:text="@string/a_0130"/>
+
+    <TextView
+        android:id="@+id/rank_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game_nametype"
+        android:layout_marginLeft="@dimen/small_gap_between_view"
+        android:layout_toRightOf="@+id/rank"
+        tools:text="8.6"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"/>
+
+    <com.jingyue.lygame.widget.tagflow.TagFlowLayout
+        android:id="@+id/tag_flow"
+        android:layout_marginTop="@dimen/small_gap_between_view"
+        android:layout_toLeftOf="@+id/exper"
+        android:layout_toRightOf="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rank"/>
+
+    <com.jingyue.lygame.widget.DownloadProgessView
+        android:layout_width="wrap_content"
+        android:id="@+id/exper"
+        android:layout_marginRight="10dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="33dp">
+    </com.jingyue.lygame.widget.DownloadProgessView>
+
+
+
+</RelativeLayout>

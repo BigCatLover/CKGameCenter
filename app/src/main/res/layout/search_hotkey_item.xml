@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/hotgame_ll"
+    android:layout_height="40dp">
+    <TextView
+        android:textSize="14dp"
+        android:id="@+id/index"
+        android:layout_marginLeft="15dp"
+        tools:text="1"
+        android:maxEms="7"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center|left"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <TextView
+        android:textSize="14dp"
+        android:id="@+id/hotkey"
+        tools:text="@string/a_0242"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/index"
+        android:layout_centerInParent="true"
+        android:gravity="center|left"
+        android:textColor="@color/color_sub_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+</RelativeLayout>

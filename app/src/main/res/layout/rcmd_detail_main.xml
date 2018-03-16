@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowBackground"
+    android:fitsSystemWindows="false">
+
+    <include layout="@layout/rcmd_detail_bottom_level"/>
+    <FrameLayout
+        android:id="@+id/media_group"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/home_video_height">
+
+        <ViewStub
+            android:id="@+id/player_stub"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_video_height"
+            android:background="@color/colorBlockMaskBg"
+            android:layout="@layout/view_youku_playview"/>
+
+        <ImageView
+            android:id="@+id/play"
+            style="@style/common.image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            app:layout_anchor="@+id/up_level_container"/>
+
+    </FrameLayout>
+
+    <include
+        android:id="@+id/up_level_container"
+        layout="@layout/rcmd_detail_top_level"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTranslucent"
+        android:orientation="vertical"
+        android:scrollbars="none"/>
+
+    <include
+        layout="@layout/view_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_size"
+        app:layout_behavior="com.jingyue.lygame.widget.DrawerNestScrollViewBehavior"/>
+
+    <ImageView
+        android:id="@+id/write_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="@dimen/big_gap_between_view"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_make_comment"/>
+
+    <include
+        android:layout_marginTop="@dimen/actionbar_size"
+        android:id="@+id/float_tag_group"
+        layout="@layout/rcmd_view_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_gap_between_view"
+        android:visibility="gone"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/common_bg_white_default"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/gotogamedetail"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_margin="7.5dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/title"
+            android:layout_marginBottom="9dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="50dp"
+                android:id="@+id/game_icon"
+                android:src="@mipmap/lygame_launcher"
+                android:layout_alignParentLeft="true"
+                android:layout_height="50dp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/game_icon"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/color_text_normal"
+                    android:textSize="17sp"
+                    tools:text="王者荣耀"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/game_name"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/game_name"
+                    android:id="@+id/score_tv"
+                    android:layout_alignBaseline="@+id/score_avg"
+                    android:textSize="12sp"
+                    android:text="@string/a_0081"
+                    android:textColor="@color/color_sub_text"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/game_name"
+                    android:id="@+id/score_avg"
+                    tools:text="8.6"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@id/score_tv"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView
+            android:layout_margin="7.5dp"
+            android:layout_below="@+id/title"
+            android:layout_width="match_parent"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text=""
+            style="@style/common.text.content"
+            android:id="@+id/comment_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/gotogamedetail"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="7.5dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:id="@+id/makecool_click"
+            android:layout_centerInParent="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="7.5dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/like_iv"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/ic_cool_unselect"
+                android:layout_height="12dp" />
+            <TextView
+                android:id="@+id/like_num"
+                android:layout_toRightOf="@+id/like_iv"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/color_sub_text"
+                android:textSize="10sp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:textSize="12dp"
+            android:id="@+id/author_name"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_alignParentRight="true"
+            tools:text="@string/a_0061"
+            android:textColor="@color/color_text_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

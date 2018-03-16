@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTranslucent"
+    android:orientation="vertical"
+    android:padding="@dimen/normal_padding_in_view">
+
+    <ImageView
+        android:id="@+id/game_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        tools:src="@mipmap/ic_launcher"
+        android:layout_marginRight="@dimen/normal_gap_between_view"/>
+
+    <TextView
+        android:id="@+id/game_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/game_icon"
+        android:textSize="20dp"
+        android:layout_marginTop="@dimen/small_gap_between_view"
+        android:textStyle="bold"
+        tools:text="王者荣耀" />
+
+    <TextView
+        android:id="@+id/game_user_number"
+        style="@style/common.text.subtitle"
+        android:textSize="@dimen/normal_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game_title"
+        android:layout_above="@+id/comment"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/small_gap_between_view"
+        android:layout_toRightOf="@+id/game_icon"
+        tools:text="2.5W用户体验" />
+
+    <LinearLayout
+        android:layout_below="@id/game_user_number"
+        android:layout_toRightOf="@+id/game_icon"
+        android:id="@+id/tag"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tag1"
+            style="@style/common.button.stroke"
+            android:layout_marginRight="@dimen/normal_gap_between_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_padding_in_view"
+            android:textSize="11sp"
+            android:visibility="gone"
+            android:layout_below="@id/game_user_number"
+            android:layout_toRightOf="@+id/game_icon"
+            android:layout_marginTop="@dimen/small_gap_between_view"
+            android:text="@string/a_0025" />
+
+        <TextView
+            android:id="@+id/tag2"
+            android:visibility="gone"
+            style="@style/common.button.stroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game_user_number"
+            android:layout_toRightOf="@+id/tag1"
+            android:padding="@dimen/small_padding_in_view"
+            android:textSize="11sp"
+            android:layout_marginTop="@dimen/small_gap_between_view"
+            android:text="@string/a_0024" />
+
+    </LinearLayout>
+
+    <com.jingyue.lygame.widget.DownloadProgessView
+        android:layout_width="wrap_content"
+        android:id="@+id/experience"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="33dp">
+    </com.jingyue.lygame.widget.DownloadProgessView>
+
+    <TextView
+        android:layout_alignBottom="@+id/game_icon"
+        android:layout_toLeftOf="@+id/experience"
+        android:maxLines="1"
+        android:id="@+id/comment"
+        android:textSize="@dimen/normal_text_size"
+        android:ellipsize="end"
+        android:gravity="bottom"
+        android:layout_marginBottom="@dimen/small_gap_between_view"
+        android:layout_marginTop="@dimen/small_gap_between_view"
+        tools:text="经典重现！正版授权说的的《XXXX》..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/game_icon" />
+
+</RelativeLayout>

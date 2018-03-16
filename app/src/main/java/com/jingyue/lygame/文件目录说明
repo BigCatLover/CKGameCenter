@@ -1,0 +1,5 @@
+bean      ：实体文件目录
+constant  ：全局静态字段相关目录
+modules   ：模块划分目录
+utils     ：工具类目录
+interface ：retrofit接口目录

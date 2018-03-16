@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorWindowBackground"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/paddingview"
+        android:layout_height="0dp"/>
+    <include
+        layout="@layout/view_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_size"
+        app:layout_behavior="com.jingyue.lygame.widget.DrawerNestScrollViewBehavior" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@+id/ptrRefresh"
+            android:layout_below="@+id/actionbar_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            cube_ptr:ptr_resistance="1"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_mode="refresh">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                />
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/retry_ll"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/retry"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_link_error"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="14dp"
+                android:layout_below="@+id/retry"
+                android:layout_marginTop="5dp"
+                android:layout_centerInParent="true"
+                android:text="@string/a_0232"
+                android:textColor="@color/color_sub_text"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

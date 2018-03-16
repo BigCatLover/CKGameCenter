@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:background="@color/colorWhite"
+    android:id="@+id/game_top"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_height="55dp">
+    <ImageView
+        android:layout_width="40dp"
+        android:scaleType="fitXY"
+        android:id="@+id/game_icon"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/lygame_launcher"
+        android:layout_height="40dp" />
+    <com.jingyue.lygame.widget.DownloadProgessView
+        android:layout_width="wrap_content"
+        android:id="@+id/download"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="33dp">
+    </com.jingyue.lygame.widget.DownloadProgessView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/game_icon"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/color_text_normal"
+            android:textSize="18sp"
+            tools:text="游戏名称"
+            android:id="@+id/game_name"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="10sp"
+            android:id="@+id/game_label"
+            tools:text="游戏说明"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/color_sub_text"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/cache_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/rlVideoPlayerControlFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekbarFrame"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/fullscreen_click"
+                android:layout_width="40dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/fullscreen" />
+
+            <TextView
+                android:id="@+id/tvVideoPlayerTotalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/fullscreen_click"
+                android:singleLine="true"
+                android:text="@string/a_0139"
+                android:textColor="@color/colorWhite"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/split"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tvVideoPlayerTotalTime"
+                android:text="/"
+                android:textColor="@color/colorWhite"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tvVideoPlayerCurrentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/split"
+                android:singleLine="true"
+                android:text="@string/a_0139"
+                android:textColor="@color/colorWhite"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/sound"
+                android:layout_width="38dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/sound_close" />
+
+            <SeekBar
+                android:id="@+id/sbVideoPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tvVideoPlayerCurrentTime"
+                android:layout_toRightOf="@id/sound"
+                android:maxHeight="4dp"
+                android:minHeight="3dp"
+                android:progress="10"
+                android:progressDrawable="@drawable/ykplayer_seek_bar_layer"
+                android:thumb="@drawable/ykplayer_seek_bar_thumb" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivVideoPlayerPauseResume"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_play" />
+
+    </RelativeLayout>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/ivVideoPlayerLoading"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:focusable="false"-->
+        <!--android:visibility="gone"-->
+        <!--android:src="@drawable/progress_bar_ani" />-->
+
+    <TextView
+        android:id="@+id/no_connect_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:textColor="@color/colorWhite"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/a_0059"
+        android:visibility="gone" />
+
+</RelativeLayout>

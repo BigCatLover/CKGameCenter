@@ -1,0 +1,8 @@
+Lib-openSource：
+    主要是用做三方库中间件的角色
+    对外的接口全部封装在
+            com.lygame.libopensourceadapter 中
+
+      HttpRequestManager  http请求相关功能
+      ImageLoaderManager  图片加载相关功能
+      OpenImPushManager   Im推送相关功能

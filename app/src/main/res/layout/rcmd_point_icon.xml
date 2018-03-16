@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jingyue.lygame.widget.CircleImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="25dp"
+    android:layout_marginRight="15dp"
+    app:border_color="@color/colorWhite"
+    app:border_width="0dp"
+    android:layout_height="25dp">
+
+</com.jingyue.lygame.widget.CircleImageView>

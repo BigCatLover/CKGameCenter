@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_marginRight="10dp"
+    android:textColor="@color/color_clickable_tag_text"
+    android:textSize="14dp"
+    android:id="@+id/tv_gametag"
+    tools:text="123"
+    android:layout_marginBottom="15dp"
+    android:gravity="center"
+    android:background="@drawable/common_conner5_bg_default"
+    android:layout_height="wrap_content">
+</TextView>

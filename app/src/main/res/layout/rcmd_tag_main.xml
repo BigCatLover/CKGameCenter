@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_below="@+id/actionbar_group"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:background="@color/colorWindowBackground"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_action_bar"/>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/container"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <include
+                android:layout_below="@+id/top_divider"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                layout="@layout/rcmd_tag_empty"/>
+
+            <TextView
+                style="@style/common.text.title"
+                android:id="@+id/system_tag_title"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_gap_between_view"
+                android:layout_marginTop="@dimen/big_gap_between_view"
+                android:layout_width="match_parent"
+                android:text="@string/a_0262"/>
+
+            <com.jingyue.lygame.widget.tagflow.TagFlowLayout
+                android:id="@+id/system_tag_container"
+                android:layout_below="@+id/system_tag_title"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_gap_between_view"
+                android:layout_marginTop="@dimen/big_gap_between_view"
+                android:layout_width="match_parent"/>
+
+            <View
+                android:background="@color/colorWindowBackground"
+                android:id="@+id/top_divider"
+                android:layout_below="@+id/system_tag_container"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/normal_gap_between_view"
+                android:layout_marginRight="@dimen/normal_gap_between_view"
+                android:layout_marginTop="@dimen/big_gap_between_view"
+                android:layout_width="match_parent"/>
+
+            <include
+                android:layout_below="@+id/top_divider"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                layout="@layout/rcmd_tag_bottom_group"/>
+
+        </RelativeLayout>
+
+        <!-- 底部輸入框  -->
+        <RelativeLayout
+            android:background="@color/colorWhite"
+            android:id="@+id/add_tag_group"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="@dimen/normal_padding_in_view">
+
+            <EditText
+                style="@style/common.text.edit"
+                android:gravity="left|center_vertical"
+                android:hint="@string/a_0263"
+                android:id="@+id/tag_edit"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/normal_gap_between_view"
+                android:layout_toLeftOf="@+id/send_btn"
+                android:layout_width="match_parent"
+                android:padding="@dimen/normal_padding_in_view"
+                android:textColor="@color/colorBlack"/>
+
+            <ImageView
+                style="@style/common.image.button"
+                android:id="@+id/send_btn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:padding="@dimen/small_padding_in_view"
+                android:src="@mipmap/ic_add_btn"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

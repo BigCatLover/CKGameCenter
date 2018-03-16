@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:paddingTop="140dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        style="@style/common.text"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/avg_score"
+        tools:text="9.6"
+        android:textSize="25sp"
+        android:layout_marginLeft="@dimen/big_gap_between_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_toRightOf="@+id/avg_score"
+        android:layout_alignBaseline="@+id/avg_score"
+        android:id="@+id/score"
+        style="@style/common.text.subtitle"
+        android:text="@string/a_0249"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.github.mikephil.charting.charts.RadarChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rank_chart_height" />
+
+</RelativeLayout>

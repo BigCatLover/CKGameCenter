@@ -1,0 +1,25 @@
+布局文件命名规范：
+
+    1.每个页面都需要带上main后缀，以标志为页面。
+    比如xx页面，可以命名为：   前缀_xx_main.xml
+
+    2.主页面页面以 activity开头，比如：
+    主页面有推荐(rcmd）,发现(find)模块，那么对应的主布局文件名分别是activity_rcmd_main,activity_find_main.xml.
+
+    3.次级页面，对应模块下次级页面命名需要带上模块名，比如：
+    推荐模块首页打开的对应游戏详情页，可以将这个页面命名为rcmd_detail_main.xml
+
+    4.include文件：
+            对于可以复用的布局，加上view前缀
+            对于不需要复用的布局，命名为  模块名[_子级模块名字]_页面名.xml
+
+
+style使用和命名规范：
+
+    命名规范： common.控件名.控件样式类型
+    比   如:  common.text.big  表示大的文字控件
+             common.button.stroke  表示空心的按钮样式
+
+    每个view都需要加上名字为common的style
+    对应的控件，在对应的style下加上 common.控件.控件类型
+

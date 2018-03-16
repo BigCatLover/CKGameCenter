@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:orientation="vertical">
+
+    <View
+        android:id="@+id/bg"
+        android:background="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include layout="@layout/view_action_bar"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@id/actionbar_group"
+        android:id="@+id/pic_content"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:id="@+id/share_pic"
+        android:background="@color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="7dp"/>
+
+    <TextView
+        android:id="@+id/page_number"
+        tools:text="1/20"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/big_gap_between_view"
+        android:textColor="@color/colorWhite"
+        style="@style/common.text.title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<!--    <TextView
+        android:id="@+id/save_img"
+        android:text="保存"
+        android:layout_marginBottom="@dimen/normal_gap_between_view"
+        android:layout_marginRight="@dimen/big_gap_between_view"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/big_text_size"
+        android:paddingTop="@dimen/normal_padding_in_view"
+        android:paddingBottom="@dimen/normal_padding_in_view"
+        android:background="@drawable/common_bg"
+        style="@style/common.button.normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>-->
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_gradient_player_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></View>
+
+</RelativeLayout>

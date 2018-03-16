@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion cfgs.compileSdkVersion
+    buildToolsVersion cfgs.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion cfgs.minSdkVersion
+        targetSdkVersion cfgs.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+//        staging {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+    }
+
+    //这个是解决lint报错的代码
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    //rxjava
+    compile libs['rxjava2']
+    compile libs['rxAndroid2']
+    //rxLifeCycle
+    compile libs['rxlfCycle']
+    compile libs['rxlfCycle-cpnts']
+    //retrofit
+    compile libs['retrofit2']
+    compile libs['retrofit2-gson']
+    compile libs['retrofit2-rxjava']
+    //base ui
+    compile libs['md']
+    compile libs['recycleView']
+    compile libs['spt-v7']
+    //compile libs['pull2refresh']
+    compile libs['cardview']
+    compile libs['slideTab']
+    //other
+    compile libs['eventBus']
+    compile libs['gson']
+    compile libs['butterknife']
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/baseview_ll"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/video_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/usercenter"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            style="@style/common.image.button"
+            android:padding="@dimen/big_padding_in_view"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lyg_float" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="40dp"
+            android:layout_height="42dp"
+            android:layout_toLeftOf="@+id/share"
+            android:layout_centerVertical="true"
+            style="@style/common.image.button"
+            android:padding="@dimen/big_padding_in_view"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/search" />
+
+        <ImageView
+            style="@style/common.image.button"
+            android:padding="@dimen/big_padding_in_view"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:id="@+id/share"
+            android:layout_height="42dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_share" />
+
+    </RelativeLayout>
+    <include layout="@layout/common_include_video_control"/>
+
+</FrameLayout>

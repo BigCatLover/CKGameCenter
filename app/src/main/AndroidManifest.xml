@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jingyue.lygame">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="ANDROID.PERMISSION.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/lyg_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/welcomeTheme"
+        tools:replace="android:allowBackup,android:icon,android:label,android:supportsRtl,android:theme">
+
+        <!-- app信息参数 -->
+        <meta-data
+            android:name="HS_APPID"
+            android:value="${HS_APPID}" />
+        <meta-data
+            android:name="HS_CLIENTID"
+            android:value="${HS_CLIENTID}" />
+        <meta-data
+            android:name="HS_APPKEY"
+            android:value="${HS_APPKEY}" />
+        <meta-data
+            android:name="HS_CLIENTKEY"
+            android:value="${HS_CLIENTKEY}" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="${UMENG_APPKEY}" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL}" />
+        <meta-data
+            android:name="com.laoyuegou.android.common.glide.CustomImageSizeGlideModule"
+            android:value="GlideModule" />
+
+        <activity
+            android:name=".modules.common.SplashActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".modules.common.MainActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize|screenLayout|uiMode"
+            android:label="主页"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.guide.GuideActivity"
+            android:label="引导页"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.rcmd.RcmdDetailActivity"
+            android:label="推荐详情页"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.common.webview.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.personal.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.personal.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.personal.AgreementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.rcmd.TagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.rcmd.TagGameListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.rcmd.BigImageGalleryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/transparent" />
+
+        <!-- 三方 -->
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".modules.common.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- sharesdk 3.1.0版本之后（包含3.1.0）才需要注册此Activity） -->
+        <activity
+            android:name="cn.sharesdk.tencent.qq.ReceiveActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106397330" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".receiver.AppInstallReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".modules.comment.GameScoreActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".modules.comment.CommentDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.comment.CommentListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.search.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.personal.UserCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.personal.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.personal.GameListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.find.SubjectDetailActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize|screenLayout|uiMode"
+            android:screenOrientation="portrait" />
+
+        <!-- 自更新 -->
+        <service
+            android:name=".utils.update.UpdateDownLoadService"
+            android:exported="false" />
+
+        <receiver android:name=".receiver.ConnectionChangeReceiver">
+            <intent-filter>
+                //检测网络变化的acton
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".model.CommonFileProvider"
+            android:authorities="${APPLICATIONID}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/config" />
+        </provider>
+
+        <activity android:name=".modules.download.DownloadCenterActivity"></activity>
+    </application>
+
+</manifest>

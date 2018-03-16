@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorWhite"
+    android:id="@+id/comment_container"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/top_divider"
+        android:layout_width="match_parent"
+        android:background="@color/colorWindowBackground"
+        android:layout_height="@dimen/small_padding_in_view"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/normal_gap_between_view"
+        android:layout_marginRight="@dimen/normal_gap_between_view"
+        android:id="@+id/comment_group_title"
+        android:layout_below="@+id/top_divider"
+        android:text="@string/a_0091"
+        android:drawableLeft="@mipmap/ic_left_index"
+        style="@style/common.text.title"
+        android:drawablePadding="@dimen/small_gap_between_view"
+        android:layout_margin="@dimen/normal_gap_between_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/comment_group_more"
+        style="@style/common.text.index"
+        android:layout_below="@+id/top_divider"
+        android:text="@string/a_0026"
+        android:layout_marginTop="@dimen/small_gap_between_view"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_below="@+id/comment_group_title"
+        android:id="@+id/comment_ctnt"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/nocomment_ll"
+        android:visibility="gone"
+        android:paddingTop="@dimen/big_gap_between_view"
+        android:paddingBottom="@dimen/big_gap_between_view"
+        android:layout_below="@+id/comment_group_title"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_marginTop="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/box"
+            android:src="@mipmap/ic_box"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_below="@+id/box"
+            android:layout_width="match_parent"
+            android:textSize="12dp"
+            android:layout_marginTop="7.5dp"
+            android:gravity="center"
+            android:text="@string/a_0137"
+            android:textColor="@color/color_text_hint"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

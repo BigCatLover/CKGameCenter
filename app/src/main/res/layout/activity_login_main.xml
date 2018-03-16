@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/view_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_size"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/actionbar_group"
+        android:layout_width="match_parent"
+        android:id="@+id/account_ll"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/login_input_bg_default"
+        android:layout_marginTop="25dp">
+        <EditText
+            android:id="@+id/et_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="@string/a_0031"
+            android:maxLength="16"
+            android:padding="8dip"
+            android:textColorHint="@color/color_text_hint"
+            android:textSize="14dp"/>
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_arrow_bottom"/>
+
+        <ImageView
+            android:id="@+id/iv_username_del"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/iv_more"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/ic_cancel"
+            android:paddingRight="10dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/account_ll"
+        style="@style/common.text.edit"
+        android:layout_width="match_parent"
+        android:id="@+id/pass_ll"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="@string/a_0029"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:padding="8dip"
+            android:singleLine="true"
+            android:textColorHint="@color/color_text_hint"
+            android:textSize="14dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/iv_password_del"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_cancel"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_below="@+id/pass_ll"
+        android:id="@+id/btn_login"
+        style="@style/common.button.normal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/a_0027"
+        android:textSize="17dp"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            style="@style/common.button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/normal_padding_in_view"
+            android:text="@string/a_0028"
+            android:textColor="@color/colorAccent"
+            android:textSize="11dp"/>
+
+        <TextView
+            android:id="@+id/tv_user_register"
+            style="@style/common.button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/normal_padding_in_view"
+            android:text="@string/a_0030"
+            android:textColor="@color/colorAccent"
+            android:textSize="11dp"/>
+    </RelativeLayout>
+</RelativeLayout>

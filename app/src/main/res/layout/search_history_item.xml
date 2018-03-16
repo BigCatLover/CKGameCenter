@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/searchhis_ll"
+    android:layout_height="40dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@mipmap/ic_green_delet"
+        android:id="@+id/del_iv"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:layout_width="15dp"
+        android:id="@+id/iv_research"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/ic_refresh_loading"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:textSize="14dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="捕鱼"
+        android:textColor="@color/color_sub_text"
+        android:id="@+id/search_his_text"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/del_iv"
+        android:layout_toRightOf="@+id/iv_research"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>
